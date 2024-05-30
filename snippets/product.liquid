@@ -1401,6 +1401,16 @@
 
     <div data-cart-errors-container class="product__form__errors"></div>
     </div>
+
+    <div
+      id="brauz-find-in-store-config-product-page"
+      data-sd="{{ shop.permanent_domain }}"
+      data-cvi="{{ product.first_available_variant.id }}"
+      data-hodv="{{ product.has_only_default_variant }}"
+      style="display: none; width: 0"
+    ></div>
+    <div id="brauz-find-in-store-product-page" style="width: 100%;"></div>
+    <script src="https://d3aq2u4yw77ivo.cloudfront.net/find-in-store/shopify/godiva/find-in-store.shopify.godiva.prod.js" async></script>
      {%- comment -%}
     --------------------------------------------------------------------------------------------------------------------
     Pickup Availability
